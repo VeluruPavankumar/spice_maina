@@ -60,7 +60,7 @@ const RecipeCard = ({
           </header>
           <p className="description">{description.slice(0, 50)}</p>
           <footer className="content__footer">
-            <Link to={`/recipes/read/${id}/detailed-${title}`}>View Recipe</Link>
+            <Link to={`/recipes/read/${id}`}>View Recipe</Link>
           </footer>
         </div>
       </div>

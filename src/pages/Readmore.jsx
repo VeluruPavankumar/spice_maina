@@ -1,4 +1,5 @@
 import axios from "../axios";
+// import axios from 'axios'
 import React, { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { useParams } from "react-router-dom";
@@ -12,6 +13,7 @@ export default function Readmore() {
   }, []);
   // Get the ID from the URL
   const { id } = useParams();
+  console.log("id",id);
   const [loading, setLoading] = useState(true);
   const [dupLoad, setDupLoad] = useState(true);
   const [data, setData] = useState(null);
@@ -30,6 +32,7 @@ export default function Readmore() {
               resolve(); // Resolve the promise when data is fetched successfully
             })
             .catch((error) => {
+              console.log(error)
               reject(error); // Reject the promise if there's an error
             });
         });

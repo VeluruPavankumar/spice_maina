@@ -119,6 +119,7 @@ const RecipeForm = () => {
         const promise = new Promise((resolve) => {
           // Add logic to submit the recipe data to your backend
           // For example, sending a POST request using axios
+          console.log(recipeData);
           axios
             .post("/add-recipe", recipeData)
             .then(() => {
