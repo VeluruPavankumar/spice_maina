@@ -1,0 +1,12 @@
+{
+    "build": {
+      "installCommand": "npm ci"
+    },
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/client/$1"
+      }
+    ]
+  }
+  

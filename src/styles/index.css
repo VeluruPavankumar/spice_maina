@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #f2fbff;
+}
+::-webkit-scrollbar{
+  display: none !important;
+}
+::-webkit-scrollbar-thumb{
+  display: none;
+}
+body {
+  user-select: none;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center fixed;
+  background-image: linear-gradient(to right, #fff4e4 0%, #ffe3d9 100%);
+}
+img{
+  image-rendering: crisp-edges !important;
+}
+.smokeBox {
+  width: 100vw;
+  height: 100vh !important;
+  overflow: hidden;
+  mix-blend-mode: screen;
+  transform: rotate(180deg) scaleX(-1);
+  position: fixed;
+  filter: brightness(1.2) contrast(1.4) saturate(1.8);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.smokeBox img {
+  width: 100%;
+}
+/* Loader */
+.suspenseLoader{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #fff0f0, #f2fbff);
+  transition: all ease-in-out 1s;
+}
+.suspenseLoader img{
+  mix-blend-mode: multiply;
+  transform: scale(1.1);
+  image-rendering: crisp-edges;
+  border-radius: 12px;
+}
+.go2072408551{
+  background-color: rgba(15, 0, 31, 0.6) !important;
+  border-radius: 20px !important;
+  color: white !important;
+  backdrop-filter: blur(5px) !important;
+  border: 1px solid rgb(91, 0, 91) !important;
+  box-shadow: 5px 5px 8px rgba(44, 0, 48, 0.45) !important;
+}
+
+.outlineLoad{
+  mix-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
